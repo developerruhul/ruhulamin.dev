@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@400;500;600;700&display=swap');
+}
+
 .container {
-  @apply max-w-7xl mr-auto ml-auto w-11/12;
+  @apply max-w-7xl mx-auto w-11/12;
 }
