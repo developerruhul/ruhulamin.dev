@@ -1,0 +1,3 @@
+.nav__menu a {
+  @apply text-5xl mb-10 font-semibold text-white hover:underline md:text-gray-900 md:text-base md:mb-0 md:ml-8 lg:ml-10 md:font-normal ;
+}

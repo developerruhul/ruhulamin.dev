@@ -1,0 +1,36 @@
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import CrossIcon from '../icons/cross';
+import Hamburger from '../icons/hamburger';
+
+const NavMenu = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <nav>
+      <button
+        onClick={() => setOpen(!open)}
+        className='w-auto bg-gray-100 rounded-full p-2 hover:bg-gray-200 focus-within:outline-none z-50 relative md:hidden'
+      >
+        {open ? (
+          <CrossIcon className="w-8 text-gray-900'" />
+        ) : (
+          <Hamburger className='w-8 text-gray-900' />
+        )}
+      </button>
+      <div
+        className={`fixed bg-black top-0 left-0 w-full h-full flex justify-center items-center ${open ? '' : 'hidden'} md:relative md:flex md:bg-transparent `}
+      >
+        <section className='flex flex-col nav__menu md:flex-row md:items-center'>
+          <NavLink activeClassName="active" to='/'>Home</NavLink>
+          <NavLink activeClassName="active" to='/about'>About</NavLink>
+          <NavLink activeClassName="active" to='/portfolio'>Portfolio</NavLink>
+          <NavLink activeClassName="active" to='/portfolio'>Blog</NavLink>
+          <NavLink activeClassName="active" to='/contact'>Contact</NavLink>
+        </section>
+      </div>
+    </nav>
+  );
+};
+
+export default NavMenu;
