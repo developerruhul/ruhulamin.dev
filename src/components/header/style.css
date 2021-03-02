@@ -1,3 +1,7 @@
 .nav__menu a {
-  @apply text-5xl mb-10 font-semibold text-white hover:underline md:text-gray-900 md:text-base md:mb-0 md:ml-8 lg:ml-10 md:font-medium ;
+  @apply text-5xl mb-10 font-semibold text-white md:text-base md:mb-0 md:ml-8 lg:ml-10 md:font-medium md:text-gray-500 hover:text-gray-900 transition-colors duration-200;
+}
+
+.nav__menu a.active {
+  @apply text-gray-900;
 }

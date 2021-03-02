@@ -3,9 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@400;500;600;700&display=swap');
+  html {
+    font-family: Inter, ui-sans-serif, system-ui;
+    line-height: 1.5;
+  }
 }
 
 .container {
   @apply max-w-7xl mx-auto w-11/12;
+}
+
+.underline-effect {
+  transition: 0.1s all ease;
+  @apply text-purple-600;
+  box-shadow: rgb(255, 255, 255) 0px -0.166667em 0px 0px inset,
+    rgba(182, 148, 241, 50%) 0px -0.333333em 0px 0px inset;
+}
+.underline-effect:hover {
+  box-shadow: rgb(255, 255, 255) 0px -0.166667em 0px 0px inset,
+    rgba(182, 148, 241, 50%) 0px -0.533333em 0px 0px inset;
 }
