@@ -15,7 +15,7 @@ const NavMenu = () => {
         {open ? (
           <CrossIcon className="w-8 text-gray-900'" />
         ) : (
-          <Hamburger className='w-8 text-white' />
+          <Hamburger className='w-8 text-white bg-gray-100' />
         )}
       </button>
       <div

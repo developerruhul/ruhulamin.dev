@@ -1,5 +1,5 @@
 .nav__menu a {
-  @apply text-5xl mb-10 font-semibold text-white md:text-base md:mb-0 md:ml-8 lg:ml-10 md:font-medium md:text-gray-500  md:hover:text-gray-900 transition-colors duration-200;
+  @apply text-5xl mb-10 font-semibold text-white md:text-base md:mb-0 md:ml-8 lg:ml-10 md:font-medium md:text-gray-600  md:hover:text-gray-900 transition-colors duration-200;
 }
 
 .nav__menu a.active {
