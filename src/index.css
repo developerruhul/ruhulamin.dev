@@ -15,7 +15,6 @@
 
 .underline-effect {
   transition: 0.1s all ease;
-  @apply text-purple-600;
   box-shadow: rgb(255, 255, 255) 0px -0.166667em 0px 0px inset,
     rgba(182, 148, 241, 50%) 0px -0.333333em 0px 0px inset;
 }
