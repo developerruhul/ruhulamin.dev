@@ -5,7 +5,7 @@ const SocialList = () => {
     <div className='py-3 sm:py-5 md:pt-6 md:pb-12 max-w-3xl'>
       <ul
         className='grid gap-8'
-        style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}
+        style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}
       >
         <li>
           <a
