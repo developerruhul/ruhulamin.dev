@@ -19,14 +19,26 @@ const NavMenu = () => {
         )}
       </button>
       <div
-        className={`fixed bg-black top-0 left-0 w-full h-full flex justify-center items-center ${open ? '' : 'hidden'} md:relative md:flex md:bg-transparent `}
+        className={`fixed bg-black top-0 left-0 w-full h-full flex justify-center items-center ${
+          open ? '' : 'hidden'
+        } md:relative md:flex md:bg-transparent `}
       >
         <section className='flex flex-col nav__menu md:flex-row md:items-center'>
-          <NavLink activeClassName="active" to='/'>Home</NavLink>
-          <NavLink activeClassName="active" to='/about'>About</NavLink>
-          <NavLink activeClassName="active" to='/portfolio'>Portfolio</NavLink>
-          <NavLink activeClassName="active" to='/portfolio'>Blog</NavLink>
-          <NavLink activeClassName="active" to='/contact'>Contact</NavLink>
+          <NavLink activeClassName='active' exact to='/'>
+            Home
+          </NavLink>
+          <NavLink activeClassName='active' exact to='/about'>
+            About
+          </NavLink>
+          <NavLink activeClassName='active' exact to='/portfolio'>
+            Portfolio
+          </NavLink>
+          <a href='https://blog.ruhulamin.dev' target='_blank'>
+            Blog
+          </a>
+          <NavLink activeClassName='active' exact to='/contact'>
+            Contact
+          </NavLink>
         </section>
       </div>
     </nav>
