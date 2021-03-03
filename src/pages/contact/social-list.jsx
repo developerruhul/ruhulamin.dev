@@ -9,13 +9,13 @@ const SocialList = () => {
       >
         <li>
           <a
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block group'
+            className='p-6 border rounded-2xl border-gray-200 transition-all duration-100 hover:border-gray-300 block bg-lightBlue-500 text-white hover:text-gray-100'
             href='https://twitter.com/developerruhul'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div>
-                <div className='bg-blue-100 text-blue-400 rounded-full p-3'>
+                <div className='bg-white text-lightBlue-400 rounded-full p-3'>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -29,8 +29,8 @@ const SocialList = () => {
                   </svg>
                 </div>
               </div>
-              <div className='flex flex-col justify-center text-purple-500 group-hover:text-purple-800 font-bold'>
-                <h2 className='text-xl text-gray-600'>Twitter</h2>
+              <div className='flex flex-col justify-center font-bold'>
+                <h2 className='text-xl'>Twitter</h2>
                 Tweet @ me →
               </div>
             </div>
@@ -39,12 +39,12 @@ const SocialList = () => {
 
         <li>
           <a
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block group'
+            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 bg-purple-400'
             href='mailto:ruhulamin.webdev@gmail.com'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div>
-                <div className='bg-purple-100 text-purple-400 rounded-full p-3'>
+                <div className='bg-purple-100 text-purple-500 rounded-full p-3'>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -76,10 +76,8 @@ const SocialList = () => {
                   </svg>
                 </div>
               </div>
-              <div className='flex flex-col justify-center text-purple-500 group-hover:text-purple-800 font-bold'>
-                <h2 className='text-xl text-gray-600 font-bold tracking-tight'>
-                  Email
-                </h2>
+              <div className='flex flex-col justify-center font-bold'>
+                <h2 className='text-xl font-bold tracking-tight'>Email</h2>
                 Send me an email →
               </div>
             </div>
@@ -88,13 +86,13 @@ const SocialList = () => {
 
         <li>
           <a
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block group'
+            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 bg-gray-500'
             href='https://github.com/developerruhul'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div>
-                <div className='bg-gray-100 text-gray-400 rounded-full p-3'>
+                <div className='bg-gray-100 text-gray-500 rounded-full p-3'>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -108,10 +106,8 @@ const SocialList = () => {
                   </svg>
                 </div>
               </div>
-              <div className='flex flex-col justify-center text-purple-500 group-hover:text-purple-800 font-bold'>
-                <h2 className='text-xl text-gray-600 font-bold tracking-tight'>
-                  GitHub
-                </h2>
+              <div className='flex flex-col justify-center font-bold'>
+                <h2 className='text-xl font-bold tracking-tight'>GitHub</h2>
                 Profile on GitHub →
               </div>
             </div>
@@ -120,13 +116,13 @@ const SocialList = () => {
 
         <li>
           <a
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block group'
+            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 bg-pink-400'
             href='https://dribbble.com/developerruhul'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div>
-                <div className='bg-pink-100 text-pink-400 rounded-full p-3'>
+                <div className='bg-pink-100 text-pink-500 rounded-full p-3'>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -140,10 +136,8 @@ const SocialList = () => {
                   </svg>
                 </div>
               </div>
-              <div className='flex flex-col justify-center text-purple-500 group-hover:text-purple-800 font-bold'>
-                <h2 className='text-xl text-gray-600 font-bold tracking-tight'>
-                  Dribbble
-                </h2>
+              <div className='flex flex-col justify-center font-bold'>
+                <h2 className='text-xl font-bold tracking-tight'>Dribbble</h2>
                 Profile on Dribbble →
               </div>
             </div>
@@ -152,13 +146,13 @@ const SocialList = () => {
 
         <li>
           <a
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block group'
+            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 bg-yellow-600'
             href='https://producthunt.com/@ruhulamin3482'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div>
-                <div className='bg-yellow-100 text-yellow-400 rounded-full p-3'>
+                <div className='bg-yellow-100 text-yellow-500 rounded-full p-3'>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -172,8 +166,8 @@ const SocialList = () => {
                   </svg>
                 </div>
               </div>
-              <div className='flex flex-col justify-center text-purple-500 group-hover:text-purple-800 font-bold'>
-                <h2 className='text-xl text-gray-600 font-bold tracking-tight'>
+              <div className='flex flex-col justify-center font-bold'>
+                <h2 className='text-xl font-bold tracking-tight'>
                   ProductHunt
                 </h2>
                 View my products →
@@ -184,13 +178,13 @@ const SocialList = () => {
 
         <li>
           <a
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block group'
+            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 bg-blue-500'
             href='https://www.linkedin.com/in/developerruhul'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div>
-                <div className='bg-blue-100 text-blue-400 rounded-full p-3'>
+                <div className='bg-blue-100 text-blue-500 rounded-full p-3'>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -204,10 +198,8 @@ const SocialList = () => {
                   </svg>
                 </div>
               </div>
-              <div className='flex flex-col justify-center text-purple-500 group-hover:text-purple-700 font-bold'>
-                <h2 className='text-xl text-gray-600 font-bold tracking-tight'>
-                  LinkedIn
-                </h2>
+              <div className='flex flex-col justify-center  font-bold'>
+                <h2 className='text-xl font-bold tracking-tight'>LinkedIn</h2>
                 Connect with me →
               </div>
             </div>
