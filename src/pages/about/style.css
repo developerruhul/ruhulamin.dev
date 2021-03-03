@@ -1,0 +1,7 @@
+.about__devphoto {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.about__devphoto:hover {
+  border-radius: 59% 41% 29% 71% / 26% 38% 62% 74%;
+}

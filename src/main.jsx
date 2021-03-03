@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from './layout';
 import Home from './pages/home';
 import Contact from './pages/contact';
+import About from './pages/about';
 
 import './index.css';
 
@@ -18,6 +19,9 @@ function Routes() {
           </Route>
           <Route exact path='/contact'>
             <Contact />
+          </Route>
+          <Route exact path='/about'>
+            <About />
           </Route>
         </Switch>
       </Layout>
