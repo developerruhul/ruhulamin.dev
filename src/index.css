@@ -9,16 +9,21 @@
   }
 }
 
-.container {
-  @apply max-w-7xl mx-auto w-11/12;
-}
+/* custome utilies */
+@layer utilities {
+  @responsive {
+    .container {
+      @apply max-w-7xl mx-auto w-11/12;
+    }
 
-.underline-effect {
-  transition: 0.1s all ease;
-  box-shadow: rgba(255, 255, 255,0) 0px -0.166667em 0px 0px inset,
-    rgba(182, 148, 241, 50%) 0px -0.333333em 0px 0px inset;
-}
-.underline-effect:hover {
-  box-shadow: rgba(255, 255, 255,0) 0px -0.166667em 0px 0px inset,
-    rgba(182, 148, 241, 50%) 0px -0.533333em 0px 0px inset;
+    .underline-effect {
+      transition: 0.1s all ease;
+      box-shadow: rgba(255, 255, 255, 0) 0px -0.166667em 0px 0px inset,
+        rgba(182, 148, 241, 50%) 0px -0.333333em 0px 0px inset;
+    }
+    .underline-effect:hover {
+      box-shadow: rgba(255, 255, 255, 0) 0px -0.166667em 0px 0px inset,
+        rgba(182, 148, 241, 50%) 0px -0.533333em 0px 0px inset;
+    }
+  }
 }

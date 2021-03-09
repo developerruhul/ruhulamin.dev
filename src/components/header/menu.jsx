@@ -21,17 +21,20 @@ const NavMenu = () => {
       <div
         className={`fixed bg-black top-0 left-0 w-full h-full flex justify-center items-center ${
           open ? '' : 'hidden'
-        } md:relative md:flex md:bg-transparent `}
+        } md:relative md:flex md:bg-transparent z-40`}
       >
-        <section className='flex flex-col nav__menu md:flex-row md:items-center'>
+        <section
+          onClick={() => setOpen(false)}
+          className='flex flex-col nav__menu md:flex-row md:items-center'
+        >
           <NavLink activeClassName='active' exact to='/'>
             Home
           </NavLink>
           <NavLink activeClassName='active' exact to='/about'>
             About
           </NavLink>
-          <NavLink activeClassName='active' exact to='/portfolio'>
-            Portfolio
+          <NavLink activeClassName='active' exact to='/work'>
+            Work
           </NavLink>
           <a href='https://blog.ruhulamin.dev' target='_blank'>
             Blog

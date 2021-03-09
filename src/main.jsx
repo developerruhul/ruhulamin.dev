@@ -6,6 +6,7 @@ import Layout from './layout';
 import Home from './pages/home';
 import Contact from './pages/contact';
 import About from './pages/about';
+import Work from './pages/work';
 
 import './index.css';
 
@@ -22,6 +23,9 @@ function Routes() {
           </Route>
           <Route exact path='/about'>
             <About />
+          </Route>
+          <Route exact path='/work'>
+            <Work />
           </Route>
         </Switch>
       </Layout>

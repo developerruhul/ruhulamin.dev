@@ -1,0 +1,17 @@
+.project-img-wrapper {
+  background: radial-gradient(
+    98.02% 134.33% at 1.93% 97.54%,
+    #7e22ce 0%,
+    #581c87 100%
+  );
+}
+
+.project-img-bubble {
+  background: radial-gradient(
+    74.79% 74.79% at 15.42% 13.12%,
+    #581c87 0%,
+    #e9d5ff 0.01%,
+    #a855f7 100%
+  );
+  padding-top: 100%;
+}
