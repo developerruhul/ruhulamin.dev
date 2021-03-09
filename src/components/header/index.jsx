@@ -5,7 +5,7 @@ import './style.css';
 
 const Header = () => {
   return (
-    <header className='pb-12 bg-gradient-to-b from-white to-transparent z-10 fixed w-full top-0 left-0'>
+    <header className='pb-12 bg-gradient-to-b from-white to-transparent z-30 fixed w-full top-0 left-0'>
       <div className='container flex items-center justify-between py-4'>
         <Brand />
         <NavMenu />
