@@ -23,9 +23,9 @@ const ProjectCard = ({ className = '', img, url = '/work' }) => {
         <div className='project-img-wrapper rounded-md p-5 relative'>
           <div
             style={{
-              transform: hovering ? 'translateZ(15px)' : 'translateZ(0)',
+              transform: hovering ? 'translateZ(10px)' : 'translateZ(0)',
             }}
-            className='w-1/4 absolute z-0 -right-2 sm:-right-6 -top-6 transition-transform duration-500 ease-out'
+            className='w-1/4 sm:w-2/4 absolute z-0 -right-2 sm:-right-6 -top-8 transition-transform duration-500 ease-out'
           >
             <div className='project-img-bubble rounded-full' />
           </div>
@@ -49,7 +49,7 @@ const ProjectCard = ({ className = '', img, url = '/work' }) => {
             style={{
               transform: hovering ? 'translateZ(20px)' : 'translateZ(0)',
             }}
-            className='w-80 relative z-20 rounded-lg shadow-2xl transition-transform duration-500 ease-out'
+            className='w-80 relative z-20 rounded-lg hover:shadow-2xl transition-all duration-500 ease-out'
             src={img}
             alt=''
           />
