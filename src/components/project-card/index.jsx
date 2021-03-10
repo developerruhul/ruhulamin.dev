@@ -11,7 +11,7 @@ const ProjectCard = ({ className = '', img, url = '/work' }) => {
     <Link
       title='Go to live website'
       to={url}
-      className={`rounded-3xl max-w-sm border bg-gray-50 ${className}`}
+      className={`rounded-3xl max-w-sm border  ${className}`}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
     >
