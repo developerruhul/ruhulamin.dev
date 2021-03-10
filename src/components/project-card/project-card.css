@@ -15,3 +15,7 @@
   );
   padding-top: 100%;
 }
+
+.project-buttons a {
+  @apply text-center text-gray-900 leading-6 font-semibold text-sm border rounded py-1.5 px-4;
+}
