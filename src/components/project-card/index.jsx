@@ -1,30 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Tilt from 'react-parallax-tilt';
 import './project-card.css';
 
-const ProjectCard = ({ className = '', img }) => {
-  return (
-    <article
-      className={`bg-gray-50 hover:bg-purple-50 rounded group max-w-sm ${className}`}
-    >
-      <div className='project-img-wrapper rounded-md p-5 relative'>
-        <div className='w-1/4 absolute z-0 -right-2 sm:-right-6 -top-6'>
-          <div className='project-img-bubble rounded-full' />
-        </div>
-        <div className='w-2/12 absolute z-0 -left-4 bottom-16'>
-          <div className='project-img-bubble rounded-full' />
-        </div>
-        <div className='w-5 absolute z-0 -left-6 bottom-11'>
-          <div className='project-img-bubble rounded-full' />
-        </div>
-        <img className='w-80 relative z-10 rounded-lg' src={img} alt='' />
-      </div>
+const ProjectCard = ({ className = '', img, url = '/work' }) => {
+  const [hovering, setHovering] = useState(false);
 
-      <section className='project-buttons mt-8 flex items-center justify-end space-x-2'>
-        <Link to='/work'>Details</Link>
-        <Link to='/work'>Live website</Link>
-      </section>
-    </article>
+  return (
+    <Link
+      to={url}
+      className={`rounded max-w-sm ${className}`}
+      onMouseEnter={() => setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
+    >
+      <Tilt
+        tiltMaxAngleX={12}
+        tiltMaxAngleY={7}
+        perspective={800}
+        transitionSpeed={1500}
+        tiltReverse
+      >
+        <div className='project-img-wrapper rounded-md p-5 relative'>
+          <div
+            style={{
+              transform: hovering ? 'translateZ(15px)' : 'translateZ(0)',
+            }}
+            className='w-1/4 absolute z-0 -right-2 sm:-right-6 -top-6 transition-transform duration-500 ease-out'
+          >
+            <div className='project-img-bubble rounded-full' />
+          </div>
+          <div
+            style={{
+              transform: hovering ? 'translateZ(10px)' : 'translateZ(0)',
+            }}
+            className='w-2/12 absolute z-0 -left-4 bottom-16 transition-transform duration-500 ease-out'
+          >
+            <div className='project-img-bubble rounded-full' />
+          </div>
+          <div
+            style={{
+              transform: hovering ? 'translateZ(20px)' : 'translateZ(0)',
+            }}
+            className='w-5 absolute z-0 -left-6 bottom-11 transition-transform duration-500 ease-out'
+          >
+            <div className='project-img-bubble rounded-full' />
+          </div>
+          <img
+            style={{
+              transform: hovering ? 'translateZ(20px)' : 'translateZ(0)',
+            }}
+            className='w-80 relative z-20 rounded-lg shadow-2xl transition-transform duration-500 ease-out'
+            src={img}
+            alt=''
+          />
+        </div>
+      </Tilt>
+    </Link>
   );
 };
 

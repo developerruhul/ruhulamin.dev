@@ -867,6 +867,11 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-parallax-tilt@^1.4.92:
+  version "1.4.92"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.4.92.tgz#5da0e5bb73911f3ab7c726df7984ac8e752989ad"
+  integrity sha512-qUtIwCsGcPhI34kT3p/RZ7RkbnjIoF8AHpk5tQOdBi67AmUsBrmdMa4DUu/Z0mlA0wQih3OZ4a1iFyRi3HQmgg==
+
 react-refresh@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.9.0.tgz#71863337adc3e5c2f8a6bfddd12ae3bfe32aafbf"
@@ -900,13 +905,6 @@ react-router@5.2.0:
     react-is "^16.6.0"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
-
-react-vanilla-tilt@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-vanilla-tilt/-/react-vanilla-tilt-1.0.0.tgz#ea2ab3d1e75ebbbca862a35664aee6837ffd5918"
-  integrity sha512-AuFFvbudpQIdzPeci9kP4p4Mo3QVIEtFVNu+iskMzNT0Efhi1fH5wzmdfMqWX8g82ypVgjAlwgdBWL9opnL2ow==
-  dependencies:
-    vanilla-tilt "1.4.1"
 
 react@^17.0.0:
   version "17.0.1"
@@ -1058,11 +1056,6 @@ value-equal@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-1.0.1.tgz#1e0b794c734c5c0cade179c437d356d931a34d6c"
   integrity sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==
-
-vanilla-tilt@1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/vanilla-tilt/-/vanilla-tilt-1.4.1.tgz#7dae5fe5904c160140b92e586a1ddd81c93bc4a9"
-  integrity sha512-yZS4jIejmhqThLlwzJ5juPwDMk6rtf+ekADDK1lAYNiw6H2VGAJr9bt8vCp+ED5kyK6sE0sMq6mxPfV8a/NdFw==
 
 vite@^2.0.1:
   version "2.0.4"

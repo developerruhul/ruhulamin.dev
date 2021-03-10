@@ -4,6 +4,8 @@
     #7e22ce 0%,
     #581c87 100%
   );
+  perspective: 400px;
+  transform-style: preserve-3d;
 }
 
 .project-img-bubble {
@@ -14,8 +16,4 @@
     #a855f7 100%
   );
   padding-top: 100%;
-}
-
-.project-buttons a {
-  @apply text-center text-gray-900 leading-6 font-semibold text-sm border rounded py-1.5 px-4;
 }
