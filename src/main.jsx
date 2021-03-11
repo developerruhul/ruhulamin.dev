@@ -7,7 +7,7 @@ import Home from './pages/home';
 import Contact from './pages/contact';
 import About from './pages/about';
 import Work from './pages/work';
-
+import PrivacyPolicy from './pages/privacy-policy';
 import './index.css';
 
 function Routes() {
@@ -26,6 +26,9 @@ function Routes() {
           </Route>
           <Route exact path='/work'>
             <Work />
+          </Route>
+          <Route exact path='/privacy-policy'>
+            <PrivacyPolicy />
           </Route>
         </Switch>
       </Layout>
