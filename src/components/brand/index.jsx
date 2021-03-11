@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Profile from '../../images/ruhul/profile.jpg';
+import Profile from '../../images/ruhul/profile_small.webp';
 
 const Brand = ({ className }) => {
   return (

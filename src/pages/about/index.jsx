@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DevPhoto from '../../images/ruhul/profile.jpg';
+import DevPhoto from '../../images/ruhul/profile.webp';
 import './style.css';
 
 const About = () => {
