@@ -4,8 +4,8 @@ import ProjectCard from '../../components/project-card';
 
 const WorkSamples = () => {
   return (
-    <section className='my-20'>
-      <article className='text-center'>
+    <section className='my-20 sm:mt-72'>
+      <article>
         <h3 className='text-2xl sm:text-4xl lg:text-5xl leading-none font-extrabold text-gray-900 tracking-tight mb-3'>
           Work samples
         </h3>

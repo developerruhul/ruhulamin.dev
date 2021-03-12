@@ -17,11 +17,20 @@ const About = () => {
           About me
         </h1>
         <p className='max-w-4xl text-lg font-medium text-gray-600 sm:leading-9'>
-          I'm a UI engineer. I Design and Develop websites- usually, I do both
-          at the same time. This allows me to quickly prototype ideas, go
-          straight from wireframe to website and create responsive variants on
-          the fly.
+          <p>
+            I'm a Fullstack developer. I began my career as a frontend developer
+            and I picked up backend skills along the way.
+          </p>
+          <p>
+            I develop outstanding frontend websites and webapps with
+            beautiful and smooth user interfaces but I'm also able to develop
+            the backend and then integrate the two(website and API) to create a
+            full blown web application - usually, I do both at the same time.
+            This allows me to build almost any kind of web app or application
+            very quickly.
+          </p>
         </p>
+
         <h2 className='text-xl sm:text-3xl lg:text-4xl leading-none font-extrabold text-gray-900 tracking-tight'>
           Get in touch
         </h2>
@@ -30,42 +39,68 @@ const About = () => {
           <a href='mailto:ruhulamin.webdev@gmail.com'>
             ruhulamin.webdev@gmail.com
           </a>
-          . I'll usually respond within 48 hours. Otherwise{' '}
+          . I'll usually respond <b>within 48 hours</b>. Otherwise{' '}
           <Link to='/contact'>here's</Link> all my social media links.
         </p>
+
+        <h2 className='text-xl sm:text-3xl lg:text-4xl leading-none font-extrabold text-gray-900 tracking-tight'>
+          Tech stack
+        </h2>
+        <p className='max-w-4xl text-lg font-medium text-gray-600 sm:leading-9'>
+          I work in <b>Javascript</b> and usually use <b>ReactJS</b> to create
+          websites. My skills include -
+        </p>
+
+        <ul>
+          <li>
+            <strong>Frontend</strong> -{' '}
+            <em>
+              HTML, CSS, JAVASCRIPT, React.js, Redux, TailwindCSS, Bootstrap,
+              Next.js, Gatsby.
+            </em>
+          </li>
+          <li>
+            <strong>Backend</strong> -{' '}
+            <em>Node.js, Express, Graphql, Prisma, MongoDB, MySQL, Next.js.</em>
+          </li>
+        </ul>
+        <p>
+          I always keep myself up to date with the everchanging tech industry. I
+          can quickly integrate with any tech stack and have experience using
+          all major state management and styling paradigms.
+        </p>
+
         <h2 className='text-xl sm:text-3xl lg:text-4xl leading-none font-extrabold text-gray-900 tracking-tight'>
           What you can expect
         </h2>
         <p className='max-w-4xl text-lg font-medium text-gray-600 sm:leading-9'>
-          I am fast and meticulously. You can always expect
+          I am fast and meticulous. You can always expect
         </p>
         <ul>
           <li>
-            <strong>Mobile-first</strong> -{' '}
+            <strong>Responsive website</strong> -{' '}
             <em>
-              ~70% of traffic comes from mobile devices. Great mobile Ux and
+              ~70% of traffic comes from mobile devices. Great mobile UX and
               fast loading speeds will have a positive impact on conversion
-              rates.
+              rates. I build websites that are responsive and provide great user
+              experience in almost all kinds of devices with various screen
+              sizes.
             </em>
           </li>
           <li>
-            <strong>Clean code</strong> -{' '}
+            <strong>Maintainable code</strong> -{' '}
             <em>
               Meticulously commented code, well-named variables and small
-              components will allow your team to extend my work easily.
+              components will allow your team to extend my work easily while
+              also making the codebase maintainable in the long run.
             </em>
           </li>
           <li>
             <strong>Anti-bug guarantee</strong> -{' '}
             <em>
-              Bugs happen. If they happen within one year after my contract
+              Bugs happen. If they happen within 2 months after my contract
               ends, I'll fix them for free.
             </em>
-          </li>
-          <li>
-            <strong>Great SEO</strong> - _Rich search results, SMO, good
-            semantics, small bundles &amp; all the other technical foundations
-            for SEO.
           </li>
         </ul>
         <h2 className='text-xl sm:text-3xl lg:text-4xl leading-none font-extrabold text-gray-900 tracking-tight'>
@@ -73,40 +108,13 @@ const About = () => {
         </h2>
         <ul>
           <li>
-            <strong>Backend work</strong> -{' '}
+            <strong>Graphic design</strong> -{' '}
             <em>
-              I can set up a backend as part of a larger project but I prefer
-              sticking to frontend and design
-            </em>
-          </li>
-          <li>
-            <strong>IE support</strong> -{' '}
-            <em>
-              IE is shrinking quickly and will be dead by 2021. The work that
-              goes into making your site work well on a 7-year-old browser is
-              usually not worth the effort.
-            </em>
-          </li>
-          <li>
-            <strong>Legacy Tech</strong> -{' '}
-            <em>
-              Angular, jQuery, Magento, etc. - If your website is exclusively
-              built on either of those you're better off working with someone
-              else
+              I have a good sense of design and can convert any design into
+              beautiful website but I prefer sticking with coding.
             </em>
           </li>
         </ul>
-        <h2 className='text-xl sm:text-3xl lg:text-4xl leading-none font-extrabold text-gray-900 tracking-tight'>
-          Tech stack
-        </h2>
-        <p className='max-w-4xl text-lg font-medium text-gray-600 sm:leading-9'>
-          I work in <strong>Javascript</strong> or <strong>Typescript</strong>{' '}
-          and usually use <strong>React</strong> with <strong>Next.js</strong>{' '}
-          for websites. For more ambitious projects or when performance is
-          crucial I use <strong>Svelte</strong>. I can quickly integrate with
-          any tech stack and have experience using all major state management
-          and styling paradigms.
-        </p>
       </article>
     </>
   );
