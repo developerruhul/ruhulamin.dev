@@ -4,13 +4,13 @@ import Tilt from 'react-parallax-tilt';
 import TagButton from '../tag-button';
 import './project-card.css';
 
-const ProjectCard = ({ className = '', img, url = '/work' }) => {
+const ProjectCard = ({ className = '', data }) => {
   const [hovering, setHovering] = useState(false);
 
   return (
     <Link
       title='Go to live website'
-      to={url}
+      to={data.url}
       className={`rounded-3xl max-w-sm border  ${className}`}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
@@ -52,23 +52,20 @@ const ProjectCard = ({ className = '', img, url = '/work' }) => {
             transform: hovering ? 'translateZ(20px)' : 'translateZ(0)',
           }}
           className='w-full min-w-80 relative z-20 rounded-lg hover:shadow-2xl transition-all duration-500 ease-out'
-          src={img}
+          src={data.img}
           alt=''
         />
       </Tilt>
 
       <article className='p-5'>
-        <h3 className='font-bold text-purple-800'>Frontend</h3>
-        <p className='mt-2'>
-          This is one of the challenges of frontendmentor. I used technologies
-          like
-        </p>
+        <h3 className='font-bold text-purple-800'>{data.scope}</h3>
+        <p className='mt-2'>{data.description}</p>
         <div className='mt-5 mb-1'>
-          {new Array(5).fill().map(() => {
-            return (
-              <TagButton.Inline className='mr-2'>Reactjs</TagButton.Inline>
-            );
-          })}
+          {data.tags.map((tag, i) => (
+            <TagButton.Inline key={tag + i} className='mr-2'>
+              {tag}
+            </TagButton.Inline>
+          ))}
         </div>
       </article>
     </Link>

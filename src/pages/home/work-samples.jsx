@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../../components/project-card';
+import projects from '../../data/projects';
 
 const WorkSamples = () => {
   return (
@@ -18,12 +19,8 @@ const WorkSamples = () => {
       </article>
 
       <section className='mt-14 sm:mt-20 grid grid-cols-1 justify-items-center gap-y-14 md:gap-x-14 md:grid-cols-2 lg:grid-cols-3'>
-        {[
-          'https://res.cloudinary.com/deirqouhr/image/upload/v1607195476/Frame_11_1_p2efpe.png',
-          'https://res.cloudinary.com/deirqouhr/image/upload/v1607195476/Frame_11_1_p2efpe.png',
-          'https://res.cloudinary.com/deirqouhr/image/upload/v1607195476/Frame_11_1_p2efpe.png',
-        ].map((url, i) => {
-          return <ProjectCard key={i} img={url} />;
+        {projects.featured.map((id) => {
+          return <ProjectCard key={id} data={projects.data[id]} />;
         })}
       </section>
     </section>
