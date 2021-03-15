@@ -13,7 +13,7 @@ const WorkHeader = () => {
       </p>
       <sub>
         I'm currently adding projects to my portfolio. It'll be great if you
-        come back in 15 days to see my full potential.
+        come back after <b>April 5</b> to see my full potential.
       </sub>
     </article>
   );

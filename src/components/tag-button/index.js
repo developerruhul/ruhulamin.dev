@@ -13,12 +13,12 @@ const TagButton = ({ children, className, ...props }) => {
 
 const Inline = ({ children, className, ...props }) => {
   return (
-    <button
-      className={`focus:outline-none font-semibold text-sm underline-effect uppercase ${className}`}
+    <span
+      className={`border inline-block rounded-md py-1 px-2 font-semibold text-xs uppercase ${className}`}
       {...props}
     >
-      #{children}
-    </button>
+      {children}
+    </span>
   );
 };
 

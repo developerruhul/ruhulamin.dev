@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Tilt from 'react-parallax-tilt';
 import Link from 'next/link';
+import Img from 'next/image';
 import cls from 'classnames';
 import TagButton from '../tag-button';
 import styles from './project-card.module.css';
@@ -11,6 +12,7 @@ const ProjectCard = ({ className = '', data }) => {
   return (
     <Link href={data.url}>
       <a
+        target='_blank'
         title='Go to live website'
         className={cls('rounded-3xl max-w-sm border', className)}
         onMouseOver={() => setHovering(true)}
@@ -28,7 +30,10 @@ const ProjectCard = ({ className = '', data }) => {
             style={{
               transform: hovering ? 'translateZ(10px)' : 'translateZ(0)',
             }}
-            className='w-1/4 sm:w-2/4 absolute z-0 -right-2 sm:-right-6 -top-8 transition-transform duration-500 ease-out'
+            className={cls(
+              'w-1/4 sm:w-2/4 absolute z-0 -right-2 sm:right-6 -top-4 transition-all duration-500 ease-out',
+              { 'sm:-right-2 -top-8': hovering }
+            )}
           >
             <div className={cls(styles.imgBubble, 'rounded-full')} />
           </div>
@@ -36,7 +41,7 @@ const ProjectCard = ({ className = '', data }) => {
             style={{
               transform: hovering ? 'translateZ(10px)' : 'translateZ(0)',
             }}
-            className='w-2/12 absolute z-0 -left-4 bottom-16 transition-transform duration-500 ease-out'
+            className='w-2/12 absolute z-0 -left-2 bottom-16 transition-transform duration-500 ease-out'
           >
             <div className={cls(styles.imgBubble, 'rounded-full')} />
           </div>
@@ -48,22 +53,33 @@ const ProjectCard = ({ className = '', data }) => {
           >
             <div className={cls(styles.imgBubble, 'rounded-full')} />
           </div>
-          <img
+          <div
             style={{
               transform: hovering ? 'translateZ(20px)' : 'translateZ(0)',
             }}
-            className='w-full relative z-20 rounded-lg hover:shadow-2xl transition-all duration-500 ease-out'
-            src={data.img}
-            alt=''
-          />
+            className='z-20 transition-all duration-500 ease-out'
+          >
+            <Img
+              className='rounded-lg hover:shadow-2xl'
+              src={`/images/portfolio-items/${data.img}`}
+              alt={data.description}
+              width={350}
+              height={220}
+            />
+          </div>
         </Tilt>
 
-        <article className='p-5'>
-          <h3 className='font-bold text-purple-800'>{data.scope}</h3>
-          <p className='mt-2'>{data.description}</p>
-          <div className='mt-5 mb-1'>
+        <article className='p-6'>
+          <h3 className='font-bold text-sm tracking-tight text-purple-800'>
+            {data.scope}
+          </h3>
+          <h2 className='text-xl font-extrabold tracking-tight text-gray-900 mt-1'>
+            {data.title}
+          </h2>
+          <p className='mt-3'>{data.description}</p>
+          <div className='mt-6'>
             {data.tags.map((tag, i) => (
-              <TagButton.Inline key={tag + i} className='mr-2'>
+              <TagButton.Inline key={tag + i} className='mr-2 mt-2'>
                 {tag}
               </TagButton.Inline>
             ))}
