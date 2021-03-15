@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import ActiveLink from '../active-link';
 import cls from 'classnames';
 import CrossIcon from '../icons/cross';
 import Hamburger from '../icons/hamburger';
@@ -31,21 +32,21 @@ const NavMenu = () => {
           onClick={() => setOpen(false)}
           className={`flex flex-col ${styles.menu} md:flex-row md:items-center`}
         >
-          <Link activeClassName='active' href='/'>
+          <ActiveLink activeClassName={styles.active} href='/'>
             <a>Home</a>
-          </Link>
-          <Link activeClassName='active' href='/about'>
+          </ActiveLink>
+          <ActiveLink activeClassName={styles.active} href='/about'>
             <a>About</a>
-          </Link>
-          <Link activeClassName='active' href='/work'>
+          </ActiveLink>
+          <ActiveLink activeClassName={styles.active} href='/work'>
             <a>Work</a>
-          </Link>
+          </ActiveLink>
           <a href='https://blog.ruhulamin.dev' target='_blank'>
             Blog
           </a>
-          <Link activeClassName='active' href='/contact'>
+          <ActiveLink activeClassName={styles.active} href='/contact'>
             <a>Contact</a>
-          </Link>
+          </ActiveLink>
         </section>
       </div>
     </nav>

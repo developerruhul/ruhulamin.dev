@@ -2,6 +2,6 @@
   @apply text-5xl mb-10 font-semibold text-white md:text-base md:mb-0 md:ml-8 lg:ml-10 md:font-medium md:text-gray-500  md:hover:text-gray-900 transition-colors duration-200;
 }
 
-.menu a.active {
+.menu .active {
   @apply text-purple-600 md:text-black;
 }
