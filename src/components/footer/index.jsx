@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Brand from '../brand';
 
 const Footer = () => {
@@ -49,13 +49,13 @@ const Footer = () => {
             </h4>
             <ul className='space-y-4'>
               <li className='hover:text-gray-900 transition-colors duration-200 tracking-tight font-medium'>
-                <Link className='block' to='/privacy-policy'>
-                  Privacy Policy
+                <Link href='/privacy-policy'>
+                  <a className='block'>Privacy Policy</a>
                 </Link>
               </li>
               <li className='hover:text-gray-900 transition-colors duration-200 tracking-tight font-medium'>
-                <Link to='/'>
-                  © 2021, <a href='https://www.ruhulamin.dev'>Ruhul Amin</a>
+                <Link href='/'>
+                  <a>© 2021, Ruhul Amin</a>
                 </Link>
               </li>
             </ul>

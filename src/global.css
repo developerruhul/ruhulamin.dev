@@ -9,7 +9,6 @@
   }
 }
 
-/* custome utilies */
 @layer utilities {
   @responsive {
     .container {

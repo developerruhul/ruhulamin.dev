@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import ProjectCard from '../../components/project-card';
 import projects from '../../data/projects';
 
@@ -11,8 +11,8 @@ const WorkSamples = () => {
           Work samples
         </h3>
         <div className='font-medium sm:font-semibold'>
-          <Link className='underline-effect' to='/work'>
-            Go to work page
+          <Link href='/work'>
+            <a className='underline-effect'>Go to work page</a>
           </Link>{' '}
           to see more of my work.
         </div>

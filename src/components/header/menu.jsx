@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
+import cls from 'classnames';
 import CrossIcon from '../icons/cross';
 import Hamburger from '../icons/hamburger';
+import styles from './header.module.css';
 
 const NavMenu = () => {
   const [open, setOpen] = useState(false);
@@ -18,30 +20,32 @@ const NavMenu = () => {
           <Hamburger className='w-8 text-white' />
         )}
       </button>
+
       <div
-        className={`fixed bg-black top-0 left-0 w-full h-full flex justify-center items-center ${
-          open ? '' : 'hidden'
-        } md:relative md:flex md:bg-transparent z-40`}
+        className={cls(
+          'fixed bg-black top-0 left-0 w-full h-full flex justify-center items-center md:relative md:flex md:bg-transparent z-40',
+          { hidden: !open }
+        )}
       >
         <section
           onClick={() => setOpen(false)}
-          className='flex flex-col nav__menu md:flex-row md:items-center'
+          className={`flex flex-col ${styles.menu} md:flex-row md:items-center`}
         >
-          <NavLink activeClassName='active' exact to='/'>
-            Home
-          </NavLink>
-          <NavLink activeClassName='active' exact to='/about'>
-            About
-          </NavLink>
-          <NavLink activeClassName='active' exact to='/work'>
-            Work
-          </NavLink>
+          <Link activeClassName='active' href='/'>
+            <a>Home</a>
+          </Link>
+          <Link activeClassName='active' href='/about'>
+            <a>About</a>
+          </Link>
+          <Link activeClassName='active' href='/work'>
+            <a>Work</a>
+          </Link>
           <a href='https://blog.ruhulamin.dev' target='_blank'>
             Blog
           </a>
-          <NavLink activeClassName='active' exact to='/contact'>
-            Contact
-          </NavLink>
+          <Link activeClassName='active' href='/contact'>
+            <a>Contact</a>
+          </Link>
         </section>
       </div>
     </nav>

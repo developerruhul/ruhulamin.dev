@@ -1,16 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Profile from '../../images/ruhul/profile_small.webp';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Brand = ({ className }) => {
   return (
-    <Link
-      to='/'
-      aria-label='Go to homepage'
-      className={'flex items-center ' + className}
-    >
-      <img className='w-12 rounded-full mr-2' src={Profile} alt='Ruhul Amin' />
-      <span className='text-gray-900 font-bold tracking-tighter'>Developer Ruhul</span>
+    <Link href='/'>
+      <a
+        aria-label='Go to homepage'
+        className={'flex items-center ' + className}
+      >
+        <div className='mr-2 flex items-center'>
+          <Image
+            width={48}
+            height={48}
+            src='/images/ruhul/profile.jpg'
+            alt='Ruhul Amin'
+            className='rounded-full'
+          />
+        </div>
+        <span className='text-gray-900 font-bold tracking-tighter'>
+          Developer Ruhul
+        </span>
+      </a>
     </Link>
   );
 };

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cls from 'classnames';
 import DevPhoto from '../../images/ruhul/profile.webp';
-import './style.css';
+import styles from './about.module.css';
 
 const About = () => {
   return (
     <>
       <img
-        className='about__devphoto mx-auto mt-8 max-w-sm w-full shadow-2xl'
+        className={cls('mx-auto mt-8 max-w-sm w-full shadow-2xl', styles.devphoto)}
         width={400}
         src={DevPhoto}
         alt='Developer Ruhul'

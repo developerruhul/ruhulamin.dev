@@ -1,4 +1,4 @@
-.project-img-wrapper {
+.imgWrapper {
   background: radial-gradient(
     98.02% 134.33% at 1.93% 97.54%,
     #7e22ce 0%,
@@ -8,7 +8,7 @@
   transform-style: preserve-3d;
 }
 
-.project-img-bubble {
+.imgBubble {
   background: radial-gradient(
     74.79% 74.79% at 15.42% 13.12%,
     #581c87 0%,
