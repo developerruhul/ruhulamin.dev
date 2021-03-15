@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
         </article>
         <Link href='/contact'>
-          <a className='flex-none bg-gray-900 hover:bg-gray-700 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200'>
+          <a className='flex-none bg-gray-900 hover:bg-gray-700 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl ring-2 ring-offset-2 ring-offset-white ring-gray-900 focus:outline-none transition-colors duration-200'>
             <span className='lg:hidden'>Contact me</span>
             <span className='hidden lg:inline'>Let's work together</span>
           </a>
