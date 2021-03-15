@@ -20,7 +20,7 @@ const About = () => {
         <h1 className='text-2xl sm:text-4xl lg:text-5xl leading-none font-extrabold text-gray-900 tracking-tight'>
           About me
         </h1>
-        <p className='max-w-4xl text-lg font-medium text-gray-600 sm:leading-9'>
+        <div className='max-w-4xl text-lg font-medium text-gray-600 sm:leading-9'>
           <p>
             I'm a Fullstack developer. I began my career as a frontend developer
             and I picked up backend skills along the way.
@@ -32,7 +32,7 @@ const About = () => {
             web application - usually, I do both at the same time. This allows
             me to build almost any kind of web app or application very quickly.
           </p>
-        </p>
+        </div>
 
         <h2 className='text-xl sm:text-3xl lg:text-4xl leading-none font-extrabold text-gray-900 tracking-tight'>
           Get in touch

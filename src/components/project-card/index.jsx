@@ -13,7 +13,7 @@ const ProjectCard = ({ className = '', data }) => {
       <a
         title='Go to live website'
         className={cls('rounded-3xl max-w-sm border', className)}
-        onMouseEnter={() => setHovering(true)}
+        onMouseOver={() => setHovering(true)}
         onMouseLeave={() => setHovering(false)}
       >
         <Tilt
@@ -30,7 +30,7 @@ const ProjectCard = ({ className = '', data }) => {
             }}
             className='w-1/4 sm:w-2/4 absolute z-0 -right-2 sm:-right-6 -top-8 transition-transform duration-500 ease-out'
           >
-            <div className={cls(styles.imgBubble, 'img-bubble rounded-full')} />
+            <div className={cls(styles.imgBubble, 'rounded-full')} />
           </div>
           <div
             style={{
@@ -38,7 +38,7 @@ const ProjectCard = ({ className = '', data }) => {
             }}
             className='w-2/12 absolute z-0 -left-4 bottom-16 transition-transform duration-500 ease-out'
           >
-            <div className='project-img-bubble rounded-full' />
+            <div className={cls(styles.imgBubble, 'rounded-full')} />
           </div>
           <div
             style={{
@@ -46,13 +46,13 @@ const ProjectCard = ({ className = '', data }) => {
             }}
             className='w-5 absolute z-0 -left-6 bottom-11 transition-transform duration-500 ease-out'
           >
-            <div className='project-img-bubble rounded-full' />
+            <div className={cls(styles.imgBubble, 'rounded-full')} />
           </div>
           <img
             style={{
               transform: hovering ? 'translateZ(20px)' : 'translateZ(0)',
             }}
-            className='w-full min-w-80 relative z-20 rounded-lg hover:shadow-2xl transition-all duration-500 ease-out'
+            className='w-full relative z-20 rounded-lg hover:shadow-2xl transition-all duration-500 ease-out'
             src={data.img}
             alt=''
           />
