@@ -1,18 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import Img from 'next/image';
 import cls from 'classnames';
-import DevPhoto from '../../images/ruhul/profile.webp';
 import styles from './about.module.css';
 
 const About = () => {
   return (
     <>
-      <img
-        className={cls('mx-auto mt-8 max-w-sm w-full shadow-2xl', styles.devphoto)}
-        width={400}
-        src={DevPhoto}
-        alt='Developer Ruhul'
-      />
+      <div className='flex justify-center'>
+        <Img
+          className={cls('shadow-md', styles.devphoto)}
+          width={400}
+          height={400}
+          src='/images/ruhul/profile.jpg'
+          alt='Developer Ruhul'
+        />
+      </div>
       <article className='mb-10 mt-16 prose prose-lg prose-purple'>
         <h1 className='text-2xl sm:text-4xl lg:text-5xl leading-none font-extrabold text-gray-900 tracking-tight'>
           About me
@@ -23,12 +26,11 @@ const About = () => {
             and I picked up backend skills along the way.
           </p>
           <p>
-            I develop outstanding frontend websites and webapps with
-            beautiful and smooth user interfaces but I'm also able to develop
-            the backend and then integrate the two(website and API) to create a
-            full blown web application - usually, I do both at the same time.
-            This allows me to build almost any kind of web app or application
-            very quickly.
+            I develop outstanding frontend websites and webapps with beautiful
+            and smooth user interfaces but I'm also able to develop the backend
+            and then integrate the two(website and API) to create a full blown
+            web application - usually, I do both at the same time. This allows
+            me to build almost any kind of web app or application very quickly.
           </p>
         </p>
 
@@ -41,7 +43,10 @@ const About = () => {
             ruhulamin.webdev@gmail.com
           </a>
           . I'll usually respond <b>within 48 hours</b>. Otherwise{' '}
-          <Link to='/contact'>here's</Link> all my social media links.
+          <Link href='/contact'>
+            <a>here's </a>
+          </Link>
+          all my social media links.
         </p>
 
         <h2 className='text-xl sm:text-3xl lg:text-4xl leading-none font-extrabold text-gray-900 tracking-tight'>
