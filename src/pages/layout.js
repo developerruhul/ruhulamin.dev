@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from './components/footer';
-import Header from './components/header';
+import Footer from '../components/footer';
+import Header from '../components/header';
 
 const Layout = ({ children }) => {
   return (
     <div className='flex flex-col min-h-screen'>
       <Header />
-      <main className='main container flex-auto flex-grow flex-shrink-0 mt-28 mb-16 md:mt-44 '>
+      <main className='main flex-auto flex-grow flex-shrink-0 mb-16'>
         {children}
       </main>
       <Footer />

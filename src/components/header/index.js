@@ -1,7 +1,6 @@
 import React from 'react';
 import Brand from '../brand';
 import NavMenu from './menu';
-import styles from './header.module.css';
 
 const Header = () => {
   return (

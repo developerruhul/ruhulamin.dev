@@ -6,7 +6,7 @@ import styles from './about.module.css';
 
 const About = () => {
   return (
-    <>
+    <div className="container section-margin-top">
       <div className='flex justify-center'>
         <Img
           className={cls('shadow-md', styles.devphoto)}
@@ -122,7 +122,7 @@ const About = () => {
           </li>
         </ul>
       </article>
-    </>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
-    <article className='prose prose-lg container prose-purple mt-16 md:mt-0'>
+    <article className='prose prose-lg container prose-purple pt-16 section-margin-top'>
       <header className='text-center mb-20 md:mb-32'>
         <h1>Privacy Policy</h1>
         <p>How I handle your data</p>

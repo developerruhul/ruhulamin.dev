@@ -5,9 +5,9 @@ import projects from '../../data/projects';
 
 const WorkSamples = () => {
   return (
-    <section className='my-20 sm:mt-72'>
+    <section className='mb-20 sm:mb-10 container section-margin-top'>
       <article>
-        <h3 className='text-2xl sm:text-4xl lg:text-5xl leading-none font-extrabold text-gray-900 tracking-tight mb-3'>
+        <h3 className='text-3xl sm:text-4xl lg:text-5xl leading-none font-extrabold text-gray-900 tracking-tight mb-4'>
           Work samples
         </h3>
         <div className='font-medium sm:font-semibold'>
@@ -18,7 +18,7 @@ const WorkSamples = () => {
         </div>
       </article>
 
-      <section className='mt-14 sm:mt-20 grid grid-cols-1 justify-items-center gap-y-14 md:gap-x-14 md:grid-cols-2 lg:grid-cols-3'>
+      <section className='mt-16 sm:mt-24 grid grid-cols-1 justify-items-center gap-y-14 md:gap-x-14 md:grid-cols-2 lg:grid-cols-3'>
         {projects.featured.map((id) => {
           return <ProjectCard key={id} data={projects.data[id]} />;
         })}

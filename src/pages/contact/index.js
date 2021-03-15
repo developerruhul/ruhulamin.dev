@@ -3,7 +3,7 @@ import SocialList from './social-list';
 
 const Contact = () => {
   return (
-    <>
+    <div className="container section-margin-top">
       <div className='pt-6 pb-4 sm:pb-8 space-y-2 md:space-y-5'>
         <h1 className='text-2xl sm:text-4xl lg:text-5xl leading-none font-extrabold text-gray-900 tracking-tight mb-7'>
           Contact
@@ -22,7 +22,7 @@ const Contact = () => {
         </p>
       </div>
       <SocialList />
-    </>
+    </div>
   );
 };
 

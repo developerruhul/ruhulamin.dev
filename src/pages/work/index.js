@@ -4,7 +4,7 @@ import WorkHeader from './work-header';
 
 const Work = () => {
   return (
-    <div className="my-8">
+    <div className="container section-margin-top">
       <WorkHeader />
       <Projects />
     </div>
