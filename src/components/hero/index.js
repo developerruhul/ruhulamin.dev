@@ -14,7 +14,7 @@ const Hero = () => {
       <div className='container md:-mt-40'>
         <article className='flex flex-col'>
           <h1 className='text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900 mb-3 sm:mb-8'>
-            Fullstack web developer
+            I'm a Fullstack web developer
           </h1>
           <h3 className='order-first sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-purple-600 mb-3'>
             <Link href='/about'>

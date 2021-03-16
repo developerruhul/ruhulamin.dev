@@ -3,7 +3,7 @@ import Tilt from 'react-parallax-tilt';
 import Link from 'next/link';
 import Img from 'next/image';
 import cls from 'classnames';
-import TagButton from '../tag-button';
+import Tag from '../tag';
 import styles from './project-card.module.css';
 import LineClamp from '../line-clamp';
 
@@ -83,9 +83,9 @@ const ProjectCard = ({ className = '', data }) => {
 
         <footer className='mt-6'>
           {data.tags.map((tag, i) => (
-            <TagButton.Inline key={tag + i} className='mr-2 mt-2'>
+            <Tag key={tag + i} className='mr-2 mt-2'>
               {tag}
-            </TagButton.Inline>
+            </Tag>
           ))}
         </footer>
       </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Brand from '../brand';
+import Brand from './brand';
 
 const Footer = () => {
   return (

@@ -18,7 +18,7 @@ const WorkSamples = () => {
         </div>
       </article>
 
-      <section className='mt-16 sm:mt-24 grid grid-cols-1 justify-items-center gap-y-14 md:gap-x-14 md:grid-cols-2 lg:grid-cols-3'>
+      <section className='mt-16 sm:mt-24 grid grid-cols-1 items-start justify-items-center gap-y-14 md:gap-x-14 md:grid-cols-2 lg:grid-cols-3'>
         {projects.featured.map((id) => {
           return <ProjectCard key={id} data={projects.data[id]} />;
         })}

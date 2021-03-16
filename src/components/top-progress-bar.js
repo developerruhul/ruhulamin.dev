@@ -54,6 +54,6 @@ window.fetch = async function (...args) {
   }
 };
 
-export default function () {
+export default function main() {
   return null;
 }
