@@ -41,9 +41,6 @@ const NavMenu = () => {
           <ActiveLink activeClassName={styles.active} href='/work'>
             <a>Work</a>
           </ActiveLink>
-          <a href='https://blog.ruhulamin.dev' target='_blank'>
-            Blog
-          </a>
           <ActiveLink activeClassName={styles.active} href='/contact'>
             <a>Contact</a>
           </ActiveLink>
