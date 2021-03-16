@@ -18,22 +18,19 @@ const SocialList = () => {
       >
         <li>
           <a
-            style={{ background: '#00aff0' }}
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100'
+            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white bg-[#00AFF0] hover:text-gray-100'
             href='https://join.skype.com/invite/ph5CQgIdcQC5'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
-              <div>
-                <div
-                  style={{ color: '#00aff0' }}
-                  className='text-3xl bg-lightBlue-100 rounded-full p-3'
-                >
-                  <FaSkype />
-                </div>
+              <div className='text-3xl bg-lightBlue-100 text-[#00AFF0] rounded-full p-3'>
+                <FaSkype />
               </div>
               <div className='flex flex-col justify-center font-bold'>
-                <h2 className='text-xl font-bold tracking-tight'>Skype <span className="text-gray-50 text-xs">(ruhulamin3482)</span></h2>
+                <h2 className='text-xl font-bold tracking-tight'>
+                  Skype{' '}
+                  <span className='text-gray-50 text-xs'>(ruhulamin3482)</span>
+                </h2>
                 Chat with me →
               </div>
             </div>
@@ -42,19 +39,13 @@ const SocialList = () => {
 
         <li>
           <a
-            style={{ background: '#1da1f2' }}
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-100 hover:border-gray-300 block text-white hover:text-gray-100'
+            className='p-6 border rounded-2xl border-gray-200 transition-all duration-100 hover:border-gray-300 block text-white hover:text-gray-100 bg-[#1DA1F2]'
             href='https://twitter.com/developerruhul'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
-              <div>
-                <div
-                  style={{ color: '#1da1f2' }}
-                  className='text-3xl bg-white rounded-full p-3'
-                >
-                  <FaTwitter />
-                </div>
+              <div className='text-3xl bg-white text-[#1DA1F2] rounded-full p-3'>
+                <FaTwitter />
               </div>
               <div className='flex flex-col justify-center font-bold'>
                 <h2 className='text-xl'>Twitter</h2>
@@ -70,10 +61,8 @@ const SocialList = () => {
             href='mailto:ruhulamin.webdev@gmail.com'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
-              <div>
-                <div className='text-3xl bg-purple-100 text-purple-500 rounded-full p-3'>
-                  <FaEnvelope />
-                </div>
+              <div className='text-3xl bg-purple-100 text-purple-500 rounded-full p-3'>
+                <FaEnvelope />
               </div>
               <div className='flex flex-col justify-center font-bold'>
                 <h2 className='text-xl font-bold tracking-tight'>Email</h2>
@@ -90,10 +79,8 @@ const SocialList = () => {
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
-              <div>
-                <div className='text-3xl bg-gray-100 text-gray-500 rounded-full p-3'>
-                  <FaGithub />
-                </div>
+              <div className='text-3xl bg-gray-100 text-gray-500 rounded-full p-3'>
+                <FaGithub />
               </div>
               <div className='flex flex-col justify-center font-bold'>
                 <h2 className='text-xl font-bold tracking-tight'>GitHub</h2>
@@ -110,10 +97,8 @@ const SocialList = () => {
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
-              <div>
-                <div className='text-3xl bg-pink-100 text-pink-500 rounded-full p-3'>
-                  <FaDribbble />
-                </div>
+              <div className='text-3xl bg-pink-100 text-pink-500 rounded-full p-3'>
+                <FaDribbble />
               </div>
               <div className='flex flex-col justify-center font-bold'>
                 <h2 className='text-xl font-bold tracking-tight'>Dribbble</h2>
@@ -125,19 +110,13 @@ const SocialList = () => {
 
         <li>
           <a
-            style={{ background: '#2867B2' }}
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 '
+            className='p-6 border rounded-2xl bg-[#0A66C2] border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 '
             href='https://www.linkedin.com/in/developerruhul'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
-              <div>
-                <div
-                  style={{ color: '#2867B2' }}
-                  className='text-3xl bg-blue-100 rounded-full p-3'
-                >
-                  <FaLinkedin />
-                </div>
+              <div className='text-3xl bg-blue-100 text-[#0A66C2] rounded-full p-3'>
+                <FaLinkedin />
               </div>
               <div className='flex flex-col justify-center  font-bold'>
                 <h2 className='text-xl font-bold tracking-tight'>LinkedIn</h2>
@@ -146,21 +125,16 @@ const SocialList = () => {
             </div>
           </a>
         </li>
+
         <li>
           <a
-            style={{ background: '#4267B2' }}
-            className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 '
+            className='p-6 border rounded-2xl bg-[#0676E8] border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 '
             href='https://www.facebook.com/developerruhul'
             target='_blank'
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
-              <div>
-                <div
-                  style={{ color: '#4267B2' }}
-                  className='text-3xl bg-blue-100 rounded-full p-3'
-                >
-                  <FaFacebook />
-                </div>
+              <div className='text-3xl bg-blue-100 text-[#0676E8] rounded-full p-3'>
+                <FaFacebook />
               </div>
               <div className='flex flex-col justify-center  font-bold'>
                 <h2 className='text-xl font-bold tracking-tight'>Facebook</h2>

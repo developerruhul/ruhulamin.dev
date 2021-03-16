@@ -6,7 +6,7 @@ import projects from '../../data/projects';
 const WorkSamples = () => {
   return (
     <section className='mb-20 sm:mb-10 container section-margin-top'>
-      <article>
+      <article className="text-center">
         <h3 className='text-3xl sm:text-4xl lg:text-5xl leading-none font-extrabold text-gray-900 tracking-tight mb-4'>
           Work samples
         </h3>
