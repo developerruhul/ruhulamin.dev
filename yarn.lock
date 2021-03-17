@@ -6297,6 +6297,14 @@ gatsby-plugin-page-creator@^3.1.0:
     globby "^11.0.2"
     lodash "^4.17.21"
 
+gatsby-plugin-postcss@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-4.1.0.tgz#71100ba9f5aecd3c15eb6c496a774b6358257ad6"
+  integrity sha512-5pMpbi9CmQa8j3PwSvUPJ0ydB7QVfbuuCM17ij83ZGpsb2V8Y7+r0CDo6drQ0CGRp8u7TAMcfpSg6JCkvfc1Sg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    postcss-loader "^4.1.0"
+
 gatsby-plugin-react-helmet@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.1.0.tgz#a210eeb840411fe59d1da1184e2ffb25383cbc9d"
@@ -6459,6 +6467,14 @@ gatsby-telemetry@^2.1.0:
     lodash "^4.17.21"
     node-fetch "^2.6.1"
     uuid "3.4.0"
+
+gatsby-transformer-json@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-3.1.0.tgz#d3cf91c5a6ec98f4a295af97b02b22e54dcb8682"
+  integrity sha512-eEd3LkxteckVQt0ka5tH2tJmYSogEfuULg7GPCsh9pcK2hR8YZq2dpFyGzwGREd6FYYkyJTg8KtqSSASiNjJrg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    bluebird "^3.7.2"
 
 gatsby-transformer-sharp@^3.0.0:
   version "3.1.0"
@@ -10411,6 +10427,17 @@ postcss-js@^3.0.3:
   dependencies:
     camelcase-css "^2.0.1"
     postcss "^8.1.6"
+
+postcss-loader@^4.1.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-4.2.0.tgz#f6993ea3e0f46600fb3ee49bbd010448123a7db4"
+  integrity sha512-mqgScxHqbiz1yxbnNcPdKYo/6aVt+XExURmEbQlviFVWogDbM4AJ0A/B+ZBpYsJrTRxKw7HyRazg9x0Q9SWwLA==
+  dependencies:
+    cosmiconfig "^7.0.0"
+    klona "^2.0.4"
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
+    semver "^7.3.4"
 
 postcss-loader@^5.0.0:
   version "5.2.0"

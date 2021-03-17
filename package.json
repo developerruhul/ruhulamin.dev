@@ -4,6 +4,7 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -14,16 +15,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@tailwindcss/jit": "^0.1.1",
     "@tailwindcss/line-clamp": "^0.2.0",
     "@tailwindcss/typography": "^0.4.0",
     "classnames": "^2.2.6",
-    "nprogress": "^0.2.0",
-    "react-icons": "^4.2.0",
-    "react-parallax-tilt": "^1.4.92",
-    "gatsby-image": "^2.5.0",
-    "tailwindcss": "^2.0.3",
-    "@tailwindcss/jit": "^0.1.1",
     "gatsby": "^3.0.1",
+    "gatsby-image": "^2.5.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-offline": "^4.0.0",
@@ -31,13 +28,19 @@
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-sharp": "^3.0.0",
+    "nprogress": "^0.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-parallax-tilt": "^1.4.92",
+    "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
+    "gatsby-plugin-postcss": "^4.1.0",
+    "gatsby-transformer-json": "^3.1.0",
     "next": "^10.0.8",
     "postcss": "^8.2.8",
     "prettier": "^2.2.1"

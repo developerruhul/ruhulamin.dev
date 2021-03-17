@@ -1,27 +1,25 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Brand = ({ className }) => {
   return (
-    <Link href='/'>
-      <a
-        aria-label='Go to homepage'
-        className={'flex items-center ' + className}
-      >
-        <div className='mr-2 flex items-center'>
-          <Image
-            width={48}
-            height={48}
-            src='/images/ruhul/profile.jpg'
-            alt='Ruhul Amin'
-            className='rounded-full'
-          />
-        </div>
-        <span className='text-gray-900 font-bold tracking-tighter'>
-          Developer Ruhul
-        </span>
-      </a>
+    <Link
+      aria-label="Go to homepage"
+      className={"flex items-center " + className}
+      to="/"
+    >
+      <StaticImage
+        placeholder="blurred"
+        src="../images/developer-ruhul.jpg"
+        width={48}
+        formats={["AUTO", "WEBP", "AVIF"]}
+        alt="Ruhul Amin"
+        className="rounded-full mr-2"
+      />
+      <span className="text-gray-900 font-bold tracking-tighter">
+        Developer Ruhul
+      </span>
     </Link>
   );
 };

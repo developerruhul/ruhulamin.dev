@@ -1,5 +1,5 @@
-import React from 'react';
-import Hero from '../../components/hero';
+import React from "react";
+import Hero from "../../components/hero";
 import WorkSamples from './work-samples';
 
 const Home = () => {
@@ -10,5 +10,6 @@ const Home = () => {
     </>
   );
 };
+
 
 export default Home;
