@@ -14,6 +14,7 @@ const Projects = () => {
           description
           tags
           url
+          github
           img {
             childImageSharp {
               gatsbyImageData(

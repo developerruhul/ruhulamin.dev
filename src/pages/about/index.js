@@ -56,13 +56,13 @@ const About = () => {
           <li>
             <strong>Frontend</strong> -{" "}
             <em>
-              HTML, CSS, JAVASCRIPT, React.js, Redux, TailwindCSS, Bootstrap,
-              Next.js, Gatsby.
+              HTML, CSS, Javascript, React.js, Redux, Next.js, Gatsby,
+              TailwindCSS, Bootstrap and other typical frontend techs.
             </em>
           </li>
           <li>
             <strong>Backend</strong> -{" "}
-            <em>Node.js, Express, Graphql, Prisma, MongoDB, MySQL, Next.js.</em>
+            <em>Node.js, Next.js, Express, Graphql, Prisma, MongoDB, MySQL.</em>
           </li>
         </ul>
         <p>

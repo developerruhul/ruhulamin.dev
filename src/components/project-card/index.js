@@ -73,14 +73,34 @@ const ProjectCard = ({ className = "", data }) => {
           {data.title}
         </h2>
 
-        <LineClamp className="mt-3">{data.description}</LineClamp>
+        <LineClamp className="mt-3">
+          {data.description}{" "}
+          <section className="my-6">
+            {data.tags.map((tag, i) => (
+              <Tag key={tag + i} className="mr-2 mt-2">
+                {tag}
+              </Tag>
+            ))}
+          </section>
+        </LineClamp>
 
-        <footer className="mt-6">
-          {data.tags.map((tag, i) => (
-            <Tag key={tag + i} className="mr-2 mt-2">
-              {tag}
-            </Tag>
-          ))}
+        <footer className="mt-8">
+          <section className="flex items-center space-x-2 ">
+            <a
+              target="_blank"
+              href={data.github}
+              className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-all font-semibold text-purple-500 text-sm"
+            >
+              Github source
+            </a>
+            <a
+              target="_blank"
+              href={data.url}
+              className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-all font-semibold text-purple-500 text-sm"
+            >
+              Live link
+            </a>
+          </section>
         </footer>
       </section>
     </article>
