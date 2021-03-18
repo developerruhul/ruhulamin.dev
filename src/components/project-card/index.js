@@ -89,14 +89,14 @@ const ProjectCard = ({ className = "", data }) => {
             <a
               target="_blank"
               href={data.github}
-              className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-all font-semibold text-purple-500 text-sm"
+              className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-colors font-bold text-purple-500 text-[13px]"
             >
-              Github source
+              Source code
             </a>
             <a
               target="_blank"
               href={data.url}
-              className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-all font-semibold text-purple-500 text-sm"
+              className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-colors font-bold text-purple-500 text-[13px]"
             >
               Live link
             </a>
