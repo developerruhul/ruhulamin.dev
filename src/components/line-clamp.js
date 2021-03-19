@@ -6,7 +6,7 @@ const LineClamp = ({ className, text, component }) => {
   return (
     <div className={className}>
       <p>
-        {expanded ? text : `${text.slice(0, 175)}...`}
+        {expanded ? text : `${text.slice(0, 170)}...`}
         {expanded && component}
       </p>
       <button
