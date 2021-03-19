@@ -3,7 +3,7 @@
     "img": "../images/portfolio-items/automatio-extension.png",
     "title": "Automatio Chrome Extension",
     "scope": "Advanced Frontend & Web scraping",
-    "description": "It's a well-designed chrome extension with a drag-&-drop interface to build a complete bot/web scraper without knowing a single line of code. The features are too many to list here. I developed the extension from start to almost finish. Of the 1.5 years of work there \"my favorite part was coming up with a solution to add support of shadow DOM, iframe, and lazy-loading which none of the competitors have yet. I've developed a deep understanding of the Javascript DOM while working on this project.",
+    "description": "It's a well-designed chrome extension with a drag-&-drop interface to build a complete bot/web scraper without knowing a single line of code. The features are too many to list here. I developed the extension from the start. Of the 1.5 years of work there \"my favorite part was coming up with a solution to add support of shadow DOM, iframe, and lazy-loading which none of the competitors have yet. I've developed a deep understanding of the Javascript DOM while working on this project.",
     "tags": [
       "React.js",
       "CSS3",
