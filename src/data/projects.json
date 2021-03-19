@@ -44,7 +44,7 @@
     "description": "This is my personal website. I created it to showcase my projects, to introduce me to people, and to provide them a way to contact me.  I designed and built it myself(I'm learning design so this is kind of a big deal for me 😊 )",
     "tags": ["React.js", "CSS3", "Next.js", "TailwindCSS", "UI design"],
     "url": "https://ruhulamin.dev",
-    "github": "https://github.com/developerruhul.github.io"
+    "github": "https://github.com/developerruhul/ruhulamin.dev"
   },
   {
     "img": "../images/portfolio-items/coindesk.png",
@@ -52,8 +52,8 @@
     "scope": "Frontend",
     "description": "It's a fictional project. I took a UI design and converted it into code. This is a complex and beautiful design. It has charts and great layouts.",
     "tags": ["HTML5", "css3", "Javscript"],
-    "url": "https://developerruhul.github.io/coindesk/",
-    "github": "https://github.com/developerruhul/coindesk"
+    "url": "https://coindesk-dashboard.netlify.app",
+    "github": "https://github.com/developerruhul/coindesk-dashboard"
   },
   {
     "img": "../images/portfolio-items/agency-landing.png",
@@ -61,16 +61,16 @@
     "scope": "Frontend",
     "description": "It's a concept of a landing page of an agency. I took the design from dribble and converted it into code. This was a great learning experience. This design has wavy and blob backgrounds and elements that are rarely seen in a standard website.",
     "tags": ["HTML5", "CSS3", "Javascript"],
-    "url": "https://developerruhul.github.io/helgo-agency-landing",
+    "url": "https://helgo-agency-landing.netlify.app",
     "github": "https://github.com/developerruhul/helgo-agency-landing"
   },
   {
     "img": "../images/portfolio-items/samsung-notes.png",
-    "title": "A Note taking App",
+    "title": "Google Keep React",
     "scope": "Frontend",
-    "description": "It's a clone of google-keep - a note taking app. But I named it samsung notes web for some reason :). It has many useful features such as saving notes, organizing notes using categories, protecting notes using password, starring notes, modifying them. It also stores these notes in the browser storage so it stays even after you close the browser.",
+    "description": "It's a note taking app. I tried to clone google-keep. It has many useful features such as saving notes, organizing notes using categories, protecting notes using password, starring notes, modifying them. It also stores these notes in the browser storage so it stays even after you close the browser.",
     "tags": ["React.js", "Redux", "material-ui", "Browser storage"],
-    "url": "https://developerruhul.github.io/samsung-notes-web",
-    "github": "https://github.com/developerruhul/samsung-notes-web"
+    "url": "https://google-keep-react.netlify.app",
+    "github": "https://github.com/developerruhul/google-keep-react"
   }
 ]
