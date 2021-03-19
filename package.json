@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "personal-website",
   "private": false,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal site of Developer Ruhul, a fullstack web developer.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Developer Ruhul <mathews.kyle@gmail.com>",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -42,18 +42,17 @@
     "gatsby-plugin-layout": "^2.1.0",
     "gatsby-plugin-postcss": "^4.1.0",
     "gatsby-transformer-json": "^3.1.0",
-    "next": "^10.0.8",
     "postcss": "^8.2.8",
     "prettier": "^2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "developer-ruhul","portfolio"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/developerruhul/ruhulamin.dev"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/developerruhul/ruhulamin.dev/issues"
   }
 }
