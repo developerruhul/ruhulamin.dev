@@ -13,30 +13,30 @@ const Footer = () => {
             </h4>
             <ul className="space-y-4">
               <li className="hover:text-gray-900 transition-colors duration-200 tracking-tight font-medium">
-                <a target="_blank" href="https://twitter.com/developerruhul">
+                <a target="_blank"  rel="noreferrer" href="https://twitter.com/developerruhul">
                   Twitter
                 </a>
               </li>
               <li className="hover:text-gray-900 transition-colors duration-200 tracking-tight font-medium">
-                <a target="_blank" href="https://github.com/developerruhul">
+                <a target="_blank"  rel="noreferrer" href="https://github.com/developerruhul">
                   Github
                 </a>
               </li>
               <li className="hover:text-gray-900 transition-colors duration-200 tracking-tight font-medium">
                 <a
-                  target="_blank"
+                  target="_blank"  rel="noreferrer"
                   href="https://www.linkedin.com/in/developerruhul/"
                 >
                   LinkedIn
                 </a>
               </li>
               <li className="hover:text-gray-900 transition-colors duration-200 tracking-tight font-medium">
-                <a target="_blank" href="https://facebook.com/developerruhul/">
+                <a target="_blank"  rel="noreferrer" href="https://facebook.com/developerruhul/">
                   Facebook
                 </a>
               </li>
               <li className="hover:text-gray-900 transition-colors duration-200 tracking-tight font-medium">
-                <a target="_blank" href="https://blog.ruhulamin.dev">
+                <a target="_blank"  rel="noreferrer" href="https://blog.ruhulamin.dev">
                   Blog
                 </a>
               </li>

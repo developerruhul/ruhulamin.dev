@@ -14,10 +14,12 @@ const ProjectCard = ({ className = "", data }) => {
   return (
     <article
       onMouseOver={() => setHovering(true)}
+      onFocus={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
+      onBlur={() => setHovering(false)}
       className={cls("rounded-3xl max-w-md border", className)}
     >
-      <Link target="_blank" title="Go to live website" to={data.url}>
+      <Link target="_blank"  rel="noreferrer" title="Go to live website" to={data.url}>
         <Tilt
           tiltMaxAngleX={12}
           tiltMaxAngleY={7}
@@ -73,28 +75,31 @@ const ProjectCard = ({ className = "", data }) => {
           {data.title}
         </h2>
 
-        <LineClamp className="mt-3">
-          {data.description}{" "}
-          <section className="my-6">
-            {data.tags.map((tag, i) => (
-              <Tag key={tag + i} className="mr-2 mt-2">
-                {tag}
-              </Tag>
-            ))}
-          </section>
-        </LineClamp>
+        <LineClamp
+          className="mt-3"
+          text={data.description}
+          component={
+            <section className="my-6">
+              {data.tags.map((tag, i) => (
+                <Tag key={tag + i} className="mr-2 mt-2">
+                  {tag}
+                </Tag>
+              ))}
+            </section>
+          }
+        />
 
         <footer className="mt-8">
           <section className="flex items-center space-x-2 ">
             <a
-              target="_blank"
+              target="_blank"  rel="noreferrer"
               href={data.github}
               className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-colors font-bold text-purple-500 text-[13px]"
             >
               Source code
             </a>
             <a
-              target="_blank"
+              target="_blank"  rel="noreferrer"
               href={data.url}
               className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-colors font-bold text-purple-500 text-[13px]"
             >

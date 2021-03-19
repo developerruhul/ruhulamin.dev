@@ -20,7 +20,7 @@ const SocialList = () => {
           <a
             className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white bg-[#00AFF0] hover:text-gray-100'
             href='https://join.skype.com/invite/ph5CQgIdcQC5'
-            target='_blank'
+            target="_blank"  rel="noreferrer"
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div className='text-3xl bg-lightBlue-100 text-[#00AFF0] rounded-full p-3'>
@@ -41,7 +41,7 @@ const SocialList = () => {
           <a
             className='p-6 border rounded-2xl border-gray-200 transition-all duration-100 hover:border-gray-300 block text-white hover:text-gray-100 bg-[#1DA1F2]'
             href='https://twitter.com/developerruhul'
-            target='_blank'
+            target="_blank"  rel="noreferrer"
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div className='text-3xl bg-white text-[#1DA1F2] rounded-full p-3'>
@@ -76,7 +76,7 @@ const SocialList = () => {
           <a
             className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 bg-gray-500'
             href='https://github.com/developerruhul'
-            target='_blank'
+            target="_blank"  rel="noreferrer"
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div className='text-3xl bg-gray-100 text-gray-500 rounded-full p-3'>
@@ -94,7 +94,7 @@ const SocialList = () => {
           <a
             className='p-6 border rounded-2xl border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 bg-pink-400'
             href='https://dribbble.com/developerruhul'
-            target='_blank'
+            target="_blank"  rel="noreferrer"
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div className='text-3xl bg-pink-100 text-pink-500 rounded-full p-3'>
@@ -112,7 +112,7 @@ const SocialList = () => {
           <a
             className='p-6 border rounded-2xl bg-[#0A66C2] border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 '
             href='https://www.linkedin.com/in/developerruhul'
-            target='_blank'
+            target="_blank"  rel="noreferrer"
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div className='text-3xl bg-blue-100 text-[#0A66C2] rounded-full p-3'>
@@ -130,7 +130,7 @@ const SocialList = () => {
           <a
             className='p-6 border rounded-2xl bg-[#0676E8] border-gray-200 transition-all duration-200 hover:border-gray-300 block text-white hover:text-gray-100 '
             href='https://www.facebook.com/developerruhul'
-            target='_blank'
+            target="_blank"  rel="noreferrer"
           >
             <div className='grid grid-flow-col auto-cols-max gap-x-3'>
               <div className='text-3xl bg-blue-100 text-[#0676E8] rounded-full p-3'>
