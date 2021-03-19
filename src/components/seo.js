@@ -4,7 +4,6 @@ import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
 const SEO = () => {
-  const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
 
   const {
@@ -24,8 +23,6 @@ const SEO = () => {
       <meta name="image" content={seo.image} />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
-
-      {(article ? true : null) && <meta property="og:type" content="article" />}
 
       {seo.title && <meta property="og:title" content={seo.title} />}
 
