@@ -23,7 +23,7 @@ const About = () => {
         </h1>
         <div className="max-w-4xl text-lg font-medium text-gray-600 sm:leading-9">
           <p>
-            I'm a fullstack web developer with 2 years of experience. I create
+            I'm a full stack web developer with 2 years of experience. I create
             outstanding websites and webapps with beautiful and smooth user
             interfaces but also I'm able to develop the backend and then
             integrate the two(website and API) to create a full blown web
