@@ -22,7 +22,7 @@
     "img": "../images/portfolio-items/automatio-dashboard.png",
     "title": "Automatio Dashboard",
     "scope": "Advanced Frontend & Backend",
-    "description": "It’s the dashboard or control panel of the automatio app that runs in the cloud. It displays the output data of the web scraper bot(that was created using the chrome-extension) running the cloud. It has payments, notifications, etc. The feature list is just too long to list here. Besides transforming the beautiful design into code I also worked on a whole lot of other things including building the whole notification system, optimizing the frontend and backend to show the output data(which can sometimes be over 30-40MB), building a real-time “output data” update system that shows scraped data as soon as it’s finished in the cloud. I have learned so much about design, architecture, performance etc while working on it.",
+    "description": "It’s the dashboard or control panel of the automatio app that runs in the cloud. It displays the output data of the web scraper bot(that was created using the chrome-extension) running the cloud. It has payments, notifications, etc. The feature list is just too long to list here. Besides transforming the beautiful design into code I also worked on a whole lot of other things including building the notification system, optimizing the frontend and backend to show the output data(which can sometimes be over 30-40MB), improved a real-time “output data” update system that shows scraped data as soon as it’s finished in the cloud. I have learned so much about design, architecture, performance etc while working on it.",
     "tags": [
       "React.js",
       "Redux",
