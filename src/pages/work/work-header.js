@@ -14,7 +14,7 @@ const WorkHeader = () => {
         </p>
         <p className='text-xs text-left mt-2 sm:mt-6'>
           I'm currently adding projects to my portfolio. It'll be great if you
-          come back after <b>April 5</b> to see my full potential.
+          come back after <b>April 15</b> to see my full potential.
         </p>
       </div>
     </article>
