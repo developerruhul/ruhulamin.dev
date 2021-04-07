@@ -15,7 +15,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@tailwindcss/jit": "^0.1.1",
     "@tailwindcss/typography": "^0.4.0",
     "classnames": "^2.2.6",
     "gatsby": "^3.0.1",
@@ -33,7 +32,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-parallax-tilt": "^1.4.92",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
