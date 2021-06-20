@@ -19,7 +19,12 @@ const ProjectCard = ({ className = "", data }) => {
       onBlur={() => setHovering(false)}
       className={cls("rounded-3xl max-w-md border", className)}
     >
-      <Link target="_blank"  rel="noreferrer" title="Go to live website" to={data.url}>
+      <Link
+        target="_blank"
+        rel="noreferrer"
+        title="Go to live website"
+        to={data.url}
+      >
         <Tilt
           tiltMaxAngleX={12}
           tiltMaxAngleY={7}
@@ -92,14 +97,16 @@ const ProjectCard = ({ className = "", data }) => {
         <footer className="mt-8">
           <section className="flex items-center space-x-2 ">
             <a
-              target="_blank"  rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
               href={data.github}
               className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-colors font-bold text-purple-500 text-[13px]"
             >
-              Source code
+              Github
             </a>
             <a
-              target="_blank"  rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
               href={data.url}
               className="hover:text-purple-400 py-1.5 px-3 bg-purple-50 rounded-md transition-colors font-bold text-purple-500 text-[13px]"
             >
