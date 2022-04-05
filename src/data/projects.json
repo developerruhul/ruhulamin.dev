@@ -1,5 +1,20 @@
 [
   {
+    "img": "../images/portfolio-items/moonly.png",
+    "title": "Moonly from Automatio",
+    "scope": "Frontend & Backend",
+    "description": "Moonly is a service that provides advanced tools to help you make informed decisions about your NFT investments. Moonly was created to help make it easier to understand what projects to get involved with in the Wild West that is the Solana NFT space. If you search “NFT rug” it’s clear why a service that can help minimize risk is critical. Beyond the outright scams, many projects fail in this space. Knowing where and when to get involved is about as clear as mud.",
+    "tags": [
+      "React.js",
+      "NextJS",
+      "Graphql",
+      "NodeJS",
+      "Typescript"
+    ],
+    "url": "https://moon.ly",
+    "github": "https://github.com/automatio-co"
+  },
+  {
     "img": "../images/portfolio-items/automatio-extension.png",
     "title": "Automatio Chrome Extension",
     "scope": "Advanced Frontend & Web scraping",
