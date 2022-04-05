@@ -12,10 +12,6 @@ const WorkHeader = () => {
           Node.JS, TailwindCSS, Bootstrap. Check out my latest web software
           development portfolio projects.
         </p>
-        <p className='text-xs text-left mt-2 sm:mt-6'>
-          I'm currently adding projects to my portfolio. It'll be great if you
-          come back after <b>April 15</b> to see my full potential.
-        </p>
       </div>
     </article>
   );
