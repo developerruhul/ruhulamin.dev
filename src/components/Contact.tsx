@@ -19,7 +19,9 @@ export default function Contact() {
           <a href={UPWORK} target="_blank" rel="noreferrer">
             Upwork
           </a>
-          <a href={`mailto:${EMAIL}`}>Email</a>
+          <a href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
+            Email
+          </a>
         </div>
       </section>
 

@@ -19,7 +19,12 @@ export default function CopyEmail() {
 
   return (
     <span className="copyemail">
-      <a href={`mailto:${EMAIL}`} className="copyemail__link">
+      <a
+        href={`mailto:${EMAIL}`}
+        className="copyemail__link"
+        target="_blank"
+        rel="noreferrer"
+      >
         {EMAIL}
       </a>
       <button

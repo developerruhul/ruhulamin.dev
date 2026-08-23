@@ -22,7 +22,7 @@ export default function Hero() {
       </p>
 
       <div className="hero__actions reveal" style={{ animationDelay: "320ms" }}>
-        <a className="hero__cta" href={`mailto:${EMAIL}`}>
+        <a className="hero__cta" href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
           Get in touch
         </a>
         <a
