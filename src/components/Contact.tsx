@@ -1,3 +1,5 @@
+import CopyEmail from "./CopyEmail";
+
 const EMAIL = "ruhulamin.webdev@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/developerruhul";
 const UPWORK = "https://www.upwork.com/freelancers/~01194011f7d63c1a51";
@@ -7,10 +9,8 @@ export default function Contact() {
     <>
       <section className="section contact" id="contact">
         <p className="eyebrow">Contact</p>
-        <h2>
-          <a href={`mailto:${EMAIL}`} className="contact__link">
-            {EMAIL}
-          </a>
+        <h2 className="contact__heading">
+          <CopyEmail />
         </h2>
         <div className="contact__links">
           <a href={LINKEDIN} target="_blank" rel="noreferrer">

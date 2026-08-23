@@ -12,8 +12,9 @@ const JOBS: Job[] = [
     years: "2024–2026",
     role: "Frontend Engineer",
     company: "UJET",
+    link: "https://ujet.cx",
     summary:
-      "Worked across the email, voice, and chat experience for UJET's cloud contact center platform. Spent most of my time on the email module — building features and helping migrate the email adapter from AngularJS to React/TypeScript. Became my team's E2E testing ambassador, setting up the initial E2E test infrastructure for the email adapter from scratch. Also did regular PR reviews and helped unblock teammates on frontend bugs.",
+      "Worked across the email, voice, and chat experience for UJET, a Silicon Valley cloud contact center platform. Spent most of my time on the email module — building features and helping migrate the email adapter from AngularJS to React/TypeScript. Became my team's E2E testing ambassador, setting up the initial E2E test infrastructure for the email adapter from scratch. Also did regular PR reviews and helped unblock teammates on frontend bugs.",
   },
   {
     years: "2022",

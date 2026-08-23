@@ -166,15 +166,42 @@
 
 /* ---------- contact + footer ---------- */
 
-.contact__link {
-  color: var(--ink);
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.1em;
+.copyemail {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
-.contact__link:hover {
+.copyemail__link {
+  color: var(--ink);
+  font-size: clamp(1.15rem, 3.5vw, 1.5rem);
+  letter-spacing: -0.01em;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.1em;
+  word-break: break-all;
+}
+
+.copyemail__link:hover {
   color: var(--accent);
   text-decoration: none;
+}
+
+.copyemail__btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  background: var(--paper-raise);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.copyemail__btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .contact__links {
