@@ -16,6 +16,10 @@
   line-height: 1.7;
 }
 
+.hero__title--recent {
+  margin-top: -0.75rem;
+}
+
 .hero__actions {
   display: flex;
   gap: 0.75rem;

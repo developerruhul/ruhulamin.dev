@@ -17,7 +17,11 @@ export default function Hero() {
         Full-Stack Engineer · React, Next.js, TypeScript, Node.js
       </p>
 
-      <div className="hero__actions reveal" style={{ animationDelay: "240ms" }}>
+      <p className="hero__title hero__title--recent reveal" style={{ animationDelay: "240ms" }}>
+        most recently: frontend @ UJET — silicon valley enterprise contact center
+      </p>
+
+      <div className="hero__actions reveal" style={{ animationDelay: "320ms" }}>
         <a className="hero__cta" href={`mailto:${EMAIL}`}>
           Get in touch
         </a>
