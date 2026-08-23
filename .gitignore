@@ -76,3 +76,6 @@ yarn-error.log
 # social banners - not site assets, keep out of the repo
 banners/
 .vercel
+
+# next.js generated, rewritten on every dev/build run
+next-env.d.ts
