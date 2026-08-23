@@ -1,10 +1,20 @@
 # ruhulamin.dev
 
-[![screenshot](public/assets/site-screenshot.png)](https://ruhulamin.dev)
+<p align="center">
+  <img src="public/assets/readme-banner.png" alt="ruhulamin.dev — full-stack engineer" width="840" />
+</p>
+
+<p align="center">
+  <a href="https://ruhulamin.dev"><strong>ruhulamin.dev →</strong></a>
+</p>
 
 My personal site — one page, no fluff. Everything a stranger needs to know at a glance: what I do, where I've worked, and how to reach me. It should load fast and be readable end to end in under a minute.
 
-It's a Vite + React + TypeScript app that prerenders to static HTML, so there's no blank flash while JavaScript loads. The whole thing is a handful of components and one CSS file, because it's a landing page, not an application — keeping it small is the feature.
+<p align="center">
+  <img src="public/assets/site-screenshot.png" alt="The site" width="640" />
+</p>
+
+Built with Next.js (App Router, static export) + Tailwind CSS + TypeScript. The page prerenders to plain HTML — no blank flash while JavaScript loads — and deploys as static files.
 
 ## Running it
 
@@ -16,12 +26,6 @@ npm run dev
 Build works the same anywhere Node does:
 
 ```sh
-npm run build    # typecheck + build + prerender
-npm run preview  # serve the built site locally
+npm run build    # static export into out/
+npx serve out    # serve the built site locally
 ```
-
-## Notes to future me
-
-- All content lives as constants inside `src/components/` — no CMS, no data layer. Editing the site means editing those files.
-- The prerender step (`scripts/prerender.mjs`) is what bakes the rendered HTML into `dist/index.html`. Don't remove it; it's the reason the page shows content before JS loads.
-- `vercel.json` holds redirects from the old Gatsby routes (`/about`, `/work`, etc.) — those pages don't exist anymore.

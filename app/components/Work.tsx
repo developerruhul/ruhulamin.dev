@@ -4,7 +4,6 @@ type Job = {
   company: string;
   link?: string;
   summary: string;
-  stack?: string[];
 };
 
 const JOBS: Job[] = [
@@ -36,21 +35,35 @@ const JOBS: Job[] = [
 
 export default function Work() {
   return (
-    <section className="section" id="work">
-      <p className="eyebrow">Work</p>
-      <h2>Experience</h2>
-      <ol className="work__list">
+    <section className="border-t border-hairline py-16" id="work">
+      <p className="font-mono text-[0.6875rem] font-medium tracking-[0.14em] text-ink-soft uppercase before:mr-2.5 before:text-accent before:content-['//']">
+        Work
+      </p>
+      <h2 className="mt-6 mb-8 text-[1.75rem] font-bold tracking-[-0.01em]">
+        Experience
+      </h2>
+      <ol className="grid list-none gap-11 p-0">
         {JOBS.map(job => (
-          <li className="work__entry" key={job.company}>
-            <p className="work__years">{job.years}</p>
-            <div className="work__body">
-              <h3 className="work__role">
+          <li
+            className="grid gap-5 max-sm:gap-1.5 sm:grid-cols-[7.5rem_1fr]"
+            key={job.company}
+          >
+            <p className="pt-1 font-mono text-[0.8125rem] whitespace-nowrap text-ink-soft">
+              {job.years}
+            </p>
+            <div>
+              <h3 className="mb-2 text-[1.0625rem] font-bold">
                 {job.role}
                 {job.link ? (
                   <>
                     {" "}
                     ·{" "}
-                    <a href={job.link} target="_blank" rel="noreferrer">
+                    <a
+                      className="font-semibold"
+                      href={job.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {job.company}
                     </a>
                   </>
@@ -58,7 +71,9 @@ export default function Work() {
                   <> · {job.company}</>
                 )}
               </h3>
-              <p>{job.summary}</p>
+              <p className="max-w-md text-[0.9375rem] leading-[1.7] text-ink-soft">
+                {job.summary}
+              </p>
             </div>
           </li>
         ))}

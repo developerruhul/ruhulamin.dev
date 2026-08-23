@@ -2,25 +2,23 @@
   "name": "ruhulamin.dev",
   "private": true,
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@fontsource-variable/instrument-sans": "^5.2.5",
-    "@fontsource/ibm-plex-mono": "^5.2.5",
+    "next": "^16.3.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "26.2.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@types/prettier": "^3.0.0",
-    "@vitejs/plugin-react": "^4.5.2",
     "prettier": "^3.5.3",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.8.3"
   }
 }

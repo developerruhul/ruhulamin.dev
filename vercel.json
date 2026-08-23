@@ -1,8 +1,0 @@
-{
-  "redirects": [
-    { "source": "/about", "destination": "/", "permanent": true },
-    { "source": "/work", "destination": "/", "permanent": true },
-    { "source": "/contact", "destination": "/", "permanent": true },
-    { "source": "/privacy-policy", "destination": "/", "permanent": true }
-  ]
-}
