@@ -1,55 +1,26 @@
 {
-  "name": "personal-website",
-  "private": false,
-  "description": "Personal site of Developer Ruhul, a fullstack web developer.",
-  "version": "0.1.0",
-  "author": "Developer Ruhul <mathews.kyle@gmail.com>",
-  "license": "0BSD",
+  "name": "ruhulamin.dev",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "vite",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.0",
-    "classnames": "^2.2.6",
-    "gatsby": "^3.0.1",
-    "gatsby-image": "^2.5.0",
-    "gatsby-plugin-image": "^1.0.0",
-    "gatsby-plugin-manifest": "^3.0.0",
-    "gatsby-plugin-offline": "^4.0.0",
-    "gatsby-plugin-react-helmet": "^4.0.0",
-    "gatsby-plugin-sharp": "^3.0.0",
-    "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-transformer-sharp": "^3.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0",
-    "react-parallax-tilt": "^1.4.92",
-    "tailwindcss": "^2.1.1"
+    "@fontsource-variable/instrument-sans": "^5.2.5",
+    "@fontsource/ibm-plex-mono": "^5.2.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.4",
-    "gatsby-plugin-layout": "^2.1.0",
-    "gatsby-plugin-postcss": "^4.1.0",
-    "gatsby-transformer-json": "^3.1.0",
-    "postcss": "^8.2.8",
-    "prettier": "^2.2.1"
-  },
-  "keywords": [
-    "developer-ruhul","portfolio"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/developerruhul/ruhulamin.dev"
-  },
-  "bugs": {
-    "url": "https://github.com/developerruhul/ruhulamin.dev/issues"
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/prettier": "^3.0.0",
+    "@vitejs/plugin-react": "^4.5.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
   }
 }

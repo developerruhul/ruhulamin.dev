@@ -54,12 +54,16 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
-.cache/
-public
+# vite build output
+dist/
+dist-ssr/
 
 # Mac files
 .DS_Store
+
+# Local-only planning / agent instructions (never commit)
+AGENTS.md
+CLAUDE.md
 
 # Yarn
 yarn-error.log

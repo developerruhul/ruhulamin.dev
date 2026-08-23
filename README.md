@@ -1,10 +1,19 @@
-# Developer Ruhul's personal website
+# ruhulamin.dev
 
-This is where he share's his projects and introduces himself.
+Personal landing page of Ruhul Amin, a full-stack engineer.
 
-## Who's Developer Ruhul?
+A single static page — fast, credible, to the point. Built with Vite + React + TypeScript, prerendered to static HTML, deployed on Vercel.
 
-Ruhul is a fullstack web developer with 2 years of experience. He creates outstanding websites and webapps with beautiful and smooth user interfaces but also he's able to develop the backend and then integrate the two(website and API) to create a full blown web application - usually, he does both at the same time. This allows him to build almost any kind of web app or application very quickly.
+## Develop
 
-### [Preview](https://ruhulamin.dev)
-![preview site](https://i.imgur.com/VNlq0Oo.png)
+```sh
+npm install
+npm run dev
+```
+
+## Build
+
+```sh
+npm run build   # typecheck + build + prerender into dist/
+npm run preview # serve the production build locally
+```
