@@ -75,3 +75,4 @@ yarn-error.log
 
 # social banners - not site assets, keep out of the repo
 banners/
+.vercel
