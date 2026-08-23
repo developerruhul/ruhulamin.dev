@@ -2,7 +2,7 @@
 
 [![screenshot](public/assets/site-screenshot.png)](https://ruhulamin.dev)
 
-My personal site. One page, no fluff — if you landed here from a LinkedIn DM or an Upwork proposal, it should take you about fifteen seconds to decide whether I'm worth a reply.
+My personal site — one page, no fluff. Everything a stranger needs to know at a glance: what I do, where I've worked, and how to reach me. It should load fast and be readable end to end in under a minute.
 
 It's a Vite + React + TypeScript app that prerenders to static HTML, so there's no blank flash while JavaScript loads. The whole thing is a handful of components and one CSS file, because it's a landing page, not an application — keeping it small is the feature.
 
