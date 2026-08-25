@@ -8,7 +8,7 @@
   <a href="https://ruhulamin.dev"><strong>ruhulamin.dev →</strong></a>
 </p>
 
-My personal site — one page, no fluff. Everything a stranger needs to know at a glance: what I do, where I've worked, and how to reach me. It should load fast and be readable end to end in under a minute.
+My personal site. Everything a stranger needs to know at a glance: what I do, where I've worked, and how to reach me. It should load fast and be readable end to end in under a minute.
 
 <p align="center">
   <img src="public/assets/site-screenshot.png" alt="The site" width="640" />
